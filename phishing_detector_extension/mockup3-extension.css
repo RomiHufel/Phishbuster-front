@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icono */
+.icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 10px auto 0; /* Centrado con espacio superior */
+}
+
+/* Título */
+h1 {
+  font-size: 1.2rem;
+  color: #4a90e2;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Texto de URL */
+#urlDisplay {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+#storedUrl {
+  font-size: 1rem;
+  color: #e74c3c; /* Rojo para advertir al usuario sobre posibles riesgos */
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Botón de acciones */
+button {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4a90e2; /* Color de seguridad */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #3a78c1;
+}
+
+/* Contenedor */
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Caja de advertencia */
+.alert-box {
+  background-color: #fef2f2;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 8px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  width: 90%;
+}
+
+.alert-box p {
+  margin: 0;
+}

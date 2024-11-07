@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "PhishBuster - Phishing Detector",
+    "version": "1.0",
+    "description": "Protección avanzada contra el phishing impulsada por IA. PhishBuster utiliza NLP para identificar y bloquear amenazas en tiempo real, garantizando la seguridad de tu navegación.",
+    "permissions": ["tabs", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "mockup3-extension.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
+  
