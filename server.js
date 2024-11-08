@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const port = 3000; // Puedes cambiar el puerto si lo prefieres
+const port = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
   let filePath = '.' + req.url;

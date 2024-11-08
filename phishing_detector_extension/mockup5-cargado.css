@@ -1,0 +1,66 @@
+/* mockup5-cargado.css */
+
+#page4 {
+    position: relative;
+    width: 100%; /* Adaptado al ancho de la extensión */
+    height: 100%; /* Adaptado a la altura de la extensión */
+    background-color: #FFFFFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #page4 .header-bar {
+    background-color: rgba(54, 147, 150, 0.94);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+  }
+  
+  #page4 .header-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
+  #page4 .header-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  #page4 .content {
+    padding: 20px 10px;
+  }
+  
+  #page4 .main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #050405;
+    margin-top: 10px;
+  }
+  
+  #page4 .result-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgba(54, 147, 150, 0.94);
+    margin-top: 10px;
+  }
+  
+  #page4 .result-box {
+    background-color: rgba(54, 147, 150, 0.33);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #050405;
+    margin: 15px 0;
+  }
+  
+  #page4 .result-box span {
+    font-weight: 700;
+  }
+  

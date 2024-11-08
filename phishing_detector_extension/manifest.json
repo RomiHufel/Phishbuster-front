@@ -8,7 +8,7 @@
       "service_worker": "background.js"
     },
     "action": {
-      "default_popup": "mockup3-extension.html",
+      "default_popup": "mockup-principal.html",
       "default_icon": {
         "16": "icon.png",
         "48": "icon.png",

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP - PhishBuster</title>
+  <link rel="stylesheet" href="mockup-principal.css">
+  <link rel="stylesheet" href="mockup3-extension.css">
+  <link rel="stylesheet" href="mockup4-analizar.css">
+  <link rel="stylesheet" href="mockup5-cargado.css">
+</head>
+<body>
+  <!-- Página Principal -->
+  <div class="popup-container" id="page1">
+    <div class="header-bar">
+      <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
+      <span class="header-title">PHISHBUSTER</span>
+    </div>
+    <div class="content">
+      <div class="user-icon-section">
+        <img src="usuario.png" alt="User Icon" class="user-icon">
+        <span class="welcome-text">HOLA, BIENVENID@!</span>
+      </div>
+      <div class="info-box">
+        PROTEGE TU BANDEJA DE ENTRADA CON PHISHBUSTER.
+        <img src="image-check.png" alt="Check Icon" class="check-icon">
+      </div>
+      <div class="description-box">
+        PHISHBUSTER ES TU EXTENSIÓN DE SEGURIDAD DISEÑADA PARA PROTEGER TU BANDEJA DE ENTRADA. DETECTA CORREOS SOSPECHOSOS Y MANTÉN TU INFORMACIÓN SEGURA CON FACILIDAD.
+      </div>
+      <button class="start-button" id="startButton">EMPEZAR</button>
+    </div>
+  </div>
+
+  <!-- Segunda Página (Sección de Navegación) -->
+  <div class="popup-container" id="page2" style="display: none;">
+    <div class="header-bar">
+      <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
+      <span class="header-title">PHISHBUSTER</span>
+    </div>
+    <div class="content">
+      <div class="main-content">
+        <img src="icon.png" alt="Main Icon" class="main-icon">
+        <h1 class="main-title">PHISHBUSTER</h1>
+      </div>
+      <p class="subtitle">Hola, ¿Qué deseas realizar?</p>
+      <div class="buttons">
+        <button class="button" id="startAnalysisButton">Iniciar Análisis</button>
+        <button class="button">Configuración</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tercera Página (Pantalla de Análisis en Progreso) -->
+  <div class="popup-container" id="page3" style="display: none;">
+    <div class="header-bar">
+      <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
+      <span class="header-title">PHISHBUSTER</span>
+    </div>
+    <div class="content">
+      <div class="status-box">
+        <span class="status-text">Estado: Conectado</span>
+      </div>
+      <img src="loading.gif" alt="Loading Icon" class="loading-icon">
+      <p class="sync-text">Por favor, espere, se está sincronizando con tu bandeja de entrada...</p>
+    </div>
+  </div>
+
+  <!-- Cuarta Página (Pantalla de Resultados) -->
+<div class="popup-container" id="page4" style="display: none;">
+  <div class="header-bar">
+    <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
+    <span class="header-title">PHISHBUSTER</span>
+  </div>
+  <div class="content">
+    <h1 class="main-title">El análisis ha culminado!</h1>
+    <p class="result-text">Con tus resultados, pudimos elaborar el siguiente análisis:</p>
+    <div class="result-box">CANTIDAD DE CORREOS ANALISADOS: <span id="correo-count">0</span></div>
+    <div class="result-box">CANTIDAD DE SOSPECHOSOS DETECTADOS: <span id="sospechosos-count">0</span></div>
+  </div>
+</div>
+
+  <script src="popup.js" defer></script>
+</body>
+</html>
