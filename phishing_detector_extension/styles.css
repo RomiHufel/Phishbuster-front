@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar h1 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #666;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar ul li.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-inner {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content section {
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.content section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.content section .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px auto 0;
+    width: 60%;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .sidebar {
+    background-color: #444;
+}
+
+.dark-mode .sidebar ul li {
+    color: #ccc;
+}
+
+.dark-mode .sidebar ul li.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dark-mode .content {
+    background-color: #555;
+}
+
+.dark-mode .content section select {
+    background-color: #666;
+    color: #fff;
+}
+
+.icon-button {
+    background: none; /* Elimina cualquier fondo */
+    border: none; /* Elimina el borde */
+    padding: 0; /* Evita espacios internos */
+    margin: 0; /* Asegura alineación correcta */
+    cursor: pointer; /* Muestra el cursor de clic */
+    font-size: 1.2em; /* Ajusta el tamaño del icono */
+    display: inline-flex; /* Mantiene la alineación */
+    align-items: center;
+    justify-content: center;
+}

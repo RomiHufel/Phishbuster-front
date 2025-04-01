@@ -26,28 +26,51 @@
         <img src="image-check.png" alt="Check Icon" class="check-icon">
       </div>
       <div class="description-box">
-        PHISHBUSTER ES TU EXTENSIÓN DE SEGURIDAD DISEÑADA PARA PROTEGER TU BANDEJA DE ENTRADA. DETECTA CORREOS SOSPECHOSOS Y MANTÉN TU INFORMACIÓN SEGURA CON FACILIDAD.
+        PHISHBUSTER ES TU EXTENSIÓN DE SEGURIDAD DISEÑADA PARA PROTEGER TU BANDEJA DE ENTRADA. DETECTA CORREOS SOSPECHOSOS Y MANTIENE TU INFORMACIÓN SEGURA CON FACILIDAD.
       </div>
       <button class="start-button" id="startButton">EMPEZAR</button>
     </div>
   </div>
 
-  <!-- Segunda Página (Sección de Navegación) -->
-  <div class="popup-container" id="page2" style="display: none;">
+  <!-- Segunda Página (Sección de Login) -->
+  <div class="popup-container" id="pageLogin" style="display: none;">
     <div class="header-bar">
       <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
       <span class="header-title">PHISHBUSTER</span>
+      <br>
     </div>
     <div class="content">
-      <div class="main-content">
-        <img src="icon.png" alt="Main Icon" class="main-icon">
-        <h1 class="main-title">PHISHBUSTER</h1>
-      </div>
-      <p class="subtitle">Hola, ¿Qué deseas realizar?</p>
+      <p class="header-title">INGRESE SUS CREDENCIALES</p>
+      <br>
+      <input type="text" id="usuarioInput" placeholder="Ingrese Usuario" style="margin-bottom: 15px; text-align: center;" />
+      <br>
+      <input type="password" id="passwordInput" placeholder="Ingrese Contraseña" style="margin-bottom: 20px; text-align: center;"/>
+      <br>
       <div class="buttons">
-        <button class="button" id="startAnalysisButton">Iniciar Análisis</button>
-        <button class="button">Configuración</button>
+        <button class="start-button" id="loginButton">Ingresar</button>
+        <button class="start-button" id="regresarButton">Regresar</button>
       </div>
+    </div>
+  </div>
+
+
+  <!-- Segunda Página (Sección de Navegación) -->
+  <div class="popup-container" id="page2" style="display: none;">
+    <div class="header-bar">
+        <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
+        <span class="header-title">PHISHBUSTER</span>
+    </div>
+    <div class="content">
+        <div class="main-content">
+            <img src="icon.png" alt="Main Icon" class="main-icon">
+            <h1 class="main-title">PHISHBUSTER</h1>
+        </div>
+        <p class="subtitle">Hola, ¿Qué deseas realizar?</p>
+        <div class="buttons">
+            <button class="button" id="startAnalysisButton">Iniciar Análisis</button>
+            <button class="button" id="configButton">Configuración</button>
+            <button class="button" id="cerrarsesionButton">Cerrar Sesion</button>
+        </div>
     </div>
   </div>
 
@@ -67,18 +90,18 @@
   </div>
 
   <!-- Cuarta Página (Pantalla de Resultados) -->
-<div class="popup-container" id="page4" style="display: none;">
-  <div class="header-bar">
-    <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
-    <span class="header-title">PHISHBUSTER</span>
+  <div class="popup-container" id="page4" style="display: none;">
+    <div class="header-bar">
+      <img src="icon.png" alt="PhishBuster Icon" class="header-icon">
+      <span class="header-title">PHISHBUSTER</span>
+    </div>
+    <div class="content">
+      <h1 class="main-title">El análisis ha culminado!</h1>
+      <p class="result-text">Con tus resultados, pudimos elaborar el siguiente análisis:</p>
+      <div class="result-box">CANTIDAD DE CORREOS ANALISADOS: <span id="correo-count">0</span></div>
+      <div class="result-box">CANTIDAD DE SOSPECHOSOS DETECTADOS: <span id="sospechosos-count">0</span></div>
+    </div>
   </div>
-  <div class="content">
-    <h1 class="main-title">El análisis ha culminado!</h1>
-    <p class="result-text">Con tus resultados, pudimos elaborar el siguiente análisis:</p>
-    <div class="result-box">CANTIDAD DE CORREOS ANALISADOS: <span id="correo-count">0</span></div>
-    <div class="result-box">CANTIDAD DE SOSPECHOSOS DETECTADOS: <span id="sospechosos-count">0</span></div>
-  </div>
-</div>
 
   <script src="popup.js" defer></script>
 </body>

@@ -4,6 +4,30 @@ var enCorreo = false; // Variable para verificar si estamos en un contexto de co
 
 console.log("Content script cargado");
 
+// Función para Login
+/*async function login(user, password) {
+    let success = 0;  // Asume que el login no fue exitoso por defecto
+
+    try {
+        const response = await fetch('http://127.0.0.1:5000/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ UserName: user, Password: password })
+        });
+        
+        const data = await response.json();
+        
+        // Si la API indica que el login fue exitoso
+        if (data.exitoso == 1) {
+            success = 1;
+        }
+    } catch (error) {
+        console.error('Error al conectar con la API:', error);
+    }
+
+    return success;  // Devuelve 1 si fue exitoso, 0 si no
+}*/
+
 // Función para analizar los enlaces en el correo actual
 function analizarEnlaces() {
     // Limpiamos los enlaces guardados y los indicadores

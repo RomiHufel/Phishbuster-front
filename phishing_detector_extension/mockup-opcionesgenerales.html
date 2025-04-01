@@ -1,0 +1,96 @@
+<!-- Quinta Página (Configuración)-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP - PhishBuster</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css"> <!-- Mueve los estilos a un archivo externo -->
+</head>
+
+<body id="Paginaconfiguracion">
+    <div class="container">
+        <div class="sidebar">
+            <img alt="NLP - PhishBuster Logo" src="./icon.png" class="logo" />
+            <h1>NLP - PhishBuster</h1>
+            <ul>
+                <li class="active"><i class="fas fa-cog"></i> General</li>
+                <li><i class="fas fa-signal"></i> Estadísticas</li>
+                <li><i class="fas fa-star"></i> Calificar y Comentar</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-inner">
+                <h2>Opciones Generales</h2>
+                <section>
+                    <h3>Personalización de la Interfaz</h3>
+                    <div class="section-content">
+                        <label>Modo:
+                            <select id="mode">
+                                <option>Básico</option>
+                                <option>Avanzado</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label>Tema:
+                            <select id="theme">
+                                <option>Claro</option>
+                                <option>Oscuro</option>
+                            </select>
+                        </label>
+                    </div>
+                </section>
+                <section>
+                    <h3>Alertas y Acciones Automáticas</h3>
+                    <div class="section-content">
+                        <label>
+                            <input type="checkbox" id="bloqueoRemitentes"/> Bloqueo Automático de Remitentes
+                        </label>
+                        <label>
+                            <input type="checkbox" id="resaltarCorreos"/> Resaltar Correos Sospechosos
+                        </label>
+                    </div>
+                </section>
+                <section>
+                    <h3>Gestión de Correos Sospechosos</h3>
+                    <div class="section-content">
+                        <label>
+                            Sugerencias de Manejo
+                            <button class="icon-button" data-action="sugerenciasManejo">📄</button>
+                        </label>
+                        <label>
+                            Reportar Correo no Detectado
+                            <button class="icon-button" data-action="reportarCorreo">⚠️</button>
+                        </label>
+                    </div>
+                </section>
+                <section class="advanced">
+                    <h3>Historial de Correos Analizados</h3>
+                    <div class="section-content">
+                        <label>
+                            Ver Historial de Análisis
+                            <button class="icon-button" data-action="verHistorial">🔍</button>
+                        </label>
+                        <label>
+                            Exportar Historial de Correos Detectados
+                            <button class="icon-button" data-action="exportarHistorial">📤</button>
+                        </label>
+                    </div>
+                </section>
+                <section class="advanced">
+                    <h3>Análisis de Enlaces en Correos</h3>
+                    <div class="section-content">
+                        <label>
+                            <input type="checkbox" id="verificacionEnlaces" checked /> Verificación automática de enlaces
+                        </label>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="opcionesgenerales.js" defer></script>
+</body>
+
+</html>
